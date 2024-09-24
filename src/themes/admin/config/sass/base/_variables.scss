@@ -1,0 +1,64 @@
+body {
+	--radius: 0.6rem;
+	--big-radius: 0.9rem;
+	--primary: #4c1d95;
+	--scrollbar-color: rgb(199, 198, 198);
+	--scrollbar-hover-color: rgb(168, 168, 168);
+}
+
+html.dark body {
+	--scrollbar-color: rgb(68, 68, 68) !important;
+	--scrollbar-hover-color: rgb(85, 85, 85) !important;
+	--boxShadow: 0 2px 8px rgb(255 255 255 / 4%) !important;
+}
+
+body {
+	p,
+	a,
+	span,
+	li,
+	label,
+	tr,
+	td,
+	a,
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	main,
+	menu,
+	nav,
+	summary,
+	input,
+	textarea,
+	select,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	small {
+		color: var(--text-color);
+	}
+}
+body.dark {
+	.ps .ps__rail-x:hover,
+	.ps .ps__rail-y:hover,
+	.ps .ps__rail-x:focus,
+	.ps .ps__rail-y:focus,
+	.ps .ps__rail-x.ps--clicking,
+	.ps .ps__rail-y.ps--clicking {
+		background: transparent;
+	}
+	.ps__thumb-y,
+	.ps__rail-y:hover > .ps__thumb-y,
+	.ps__rail-y:focus > .ps__thumb-y,
+	.ps__rail-y.ps--clicking .ps__thumb-y {
+		background-color: rgb(110, 110, 110);
+	}
+}

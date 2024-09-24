@@ -1,0 +1,17 @@
+@import "./base/antd";
+@import "./base/utilities";
+@import "./base/variables";
+@import "./base/base";
+@import "./base/app";
+@import "./base/color";
+//@import "./base/scroll";
+@import "./base/responsive";
+@import "./base/transitions";
+
+h1 {
+	@apply text-2xl;
+}
+
+h2 {
+	@apply text-xl;
+}

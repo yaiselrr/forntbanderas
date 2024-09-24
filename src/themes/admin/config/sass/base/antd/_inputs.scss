@@ -1,0 +1,177 @@
+/*checkbox*/
+.ant-checkbox-inner {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+}
+
+.ant-checkbox .ant-checkbox-input:focus-visible + .ant-checkbox-inner {
+  @apply outline-primary-800 border-[2px]
+}
+
+.ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner, :where(.css-dev-only-do-not-override-1hsjdkk).ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  @apply rounded  bg-primary-700 #{!important};
+}
+
+.ant-checkbox .ant-checkbox-input:focus-visible + .ant-checkbox-inner {
+  @apply outline-primary-300 border-[2px]
+}
+
+.ant-checkbox .ant-checkbox-inner:hover, .ant-radio .ant-radio-inner:hover, {
+  @apply border-primary-300 #{!important}
+}
+
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  @apply rounded  border-primary-500 #{!important};
+}
+
+.app-input {
+  @apply border-none #{!important};
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+  @apply rounded  bg-primary-700 #{!important};
+  @apply rounded  border-primary-700 #{!important};
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner, :where(.css-dev-only-do-not-override-1hsjdkk).ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  @apply border-primary-500 #{!important};
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled):after {
+  @apply rounded  border-primary-700 #{!important};
+}
+
+.ant-checkbox-checked {
+  .ant-checkbox-inner {
+    @apply bg-primary-500 #{!important};
+    @apply border-primary-500 #{!important};
+  }
+
+  &::after {
+    @apply border-primary-500 #{!important};
+
+    &:hover {
+      @apply rounded #{!important};
+    }
+  }
+}
+
+/* Radio*/
+
+.ant-radio-inner {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+}
+
+:where(.css-dev-only-do-not-override-1hsjdkk).ant-radio-wrapper-checked:not(.ant-radio-wrapper-disabled):hover .ant-radio-inner, :where(.css-dev-only-do-not-override-1hsjdkk).ant-radio-checked:not(.ant-radio-disabled):hover .ant-radio-inner {
+  @apply bg-primary-700 #{!important};
+}
+
+.ant-radio .ant-radio-inner:hover, .ant-radio .ant-radio-inner:hover, {
+  @apply border-primary-300 #{!important}
+}
+
+.ant-radio:not(.ant-radio-disabled):hover .ant-radio-inner {
+  @apply border-primary-500 #{!important};
+}
+
+.ant-radio-wrapper:not(.ant-radio-wrapper-disabled):hover .ant-radio-checked:not(.ant-radio-disabled) .ant-radio-inner {
+  @apply bg-primary-700 #{!important};
+  @apply border-primary-700 #{!important};
+}
+
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  @apply bg-primary-600 border-primary-600
+}
+
+.ant-radio-wrapper:not(.ant-radio-wrapper-disabled):hover .ant-radio-inner, :where(.css-dev-only-do-not-override-1hsjdkk).ant-radio:not(.ant-radio-disabled):hover .ant-radio-inner {
+  @apply border-primary-500 #{!important};
+}
+
+.ant-radio-wrapper:not(.ant-radio-wrapper-disabled):hover .ant-radio-checked:not(.ant-radio-disabled):after {
+  @apply border-primary-700 #{!important};
+}
+
+.ant-radio-checked {
+  .ant-radio-inner {
+    @apply bg-primary-500 #{!important};
+    @apply border-primary-500 #{!important};
+  }
+
+  &::after {
+    @apply border-primary-500 #{!important};
+
+    &:hover {
+      @apply #{!important};
+    }
+  }
+}
+
+html.dark {
+  .ant-checkbox-wrapper > * {
+    @apply text-slate-400;
+  }
+
+  .ant-checkbox-inner {
+    @apply bg-dark-100;
+  }
+
+  textarea.ant-input {
+    @apply bg-slate-800 text-white;
+    &:hover:not(:focus) {
+      @apply bg-slate-700 #{!important};
+    }
+  }
+
+  .ant-input-number {
+    @apply: text-slate-400;
+    &-handler {
+      @apply bg-slate-400 border-transparent text-white;
+      span {
+        @apply text-white;
+      }
+    }
+  }
+
+  .ant-switch {
+    @apply bg-slate-600;
+  }
+
+  .ant-switch-checked {
+    @apply bg-primary-700;
+  }
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  @apply border-primary-500
+  border-inline-end-width: 1px;
+  z-index: 1;
+}
+
+.ant-input-affix-wrapper-focused {
+  @apply border-primary-500
+}
+
+.ant-input-affix-wrapper:focus {
+  @apply border-primary-300
+}
+
+.ant-input:hover, .ant-input:active, .ant-input-search .ant-input:hover, .ant-input-search .ant-input:active {
+  @apply border-primary-200
+  border-inline-end-width: 1px;
+}
+
+.ant-input:focus, .ant-input-search .ant-input:focus {
+  @apply border-primary-100
+  border-inline-end-width: 1px;
+  @apply shadow-sm
+    //box-shadow: 0 0 0 2px rgba(255, 145, 255, 0.1);
+  outline: 0
+}
+
+.ant-input-group .ant-input-group-addon:last-child {
+  @apply bg-primary-600 text-white border-primary-600
+}
+

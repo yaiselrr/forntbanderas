@@ -1,0 +1,56 @@
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background: transparent;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-color);
+	border-radius: 5px;
+	transition: all;
+	transition-duration: 100ms;
+
+	&:hover {
+		background: var(--scrollbar-hover-color);
+		cursor: pointer !important;
+	}
+}
+
+body {
+	scrollbar-width: thin;
+}
+
+.scrollbox {
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		background-color: transparent;
+		width: 8px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+	}
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			background: var(--scrollbar-hover-color);
+		}
+	}
+}
+
+// body.dark {
+// 	::-webkit-scrollbar-thumb {
+// 		background: var(--scrollbar-color) !important;
+// 	}
+
+// 	.scrollbox {
+// 		&:hover {
+// 			&::-webkit-scrollbar-thumb {
+// 				background: var(--scrollbar-hover-color);
+// 			}
+// 		}
+// 	}
+// }

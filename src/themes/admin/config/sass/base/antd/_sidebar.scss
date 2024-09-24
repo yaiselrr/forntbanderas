@@ -1,0 +1,27 @@
+#sidebarant {
+  @apply text-[15px] #{important}
+}
+
+#sidebarant {
+  .ant-menu-submenu-title, .ant-menu-item, .ant-menu-item-selected {
+    @apply hover:bg-primary-800 text-white
+  }
+
+
+  .ant-menu-sub {
+    @apply bg-primary-900
+  }
+
+  .ant-menu-item-selected {
+    @apply bg-primary-900
+  }
+
+  .ant-menu-item-group-title {
+    @apply
+  }
+
+  .ant-menu-item-icon {
+    @apply text-[20px] #{important}
+  }
+
+}

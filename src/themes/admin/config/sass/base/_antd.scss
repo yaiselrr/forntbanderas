@@ -1,0 +1,95 @@
+@import "./antd/index.scss";
+
+.ant-tooltip-inner{
+	@apply bg-black bg-opacity-70 px-3 py-0 flex items-center rounded-md;
+
+	span {
+		@apply text-white;
+	}
+}
+.ant-tooltip.arrow .ant-tooltip-arrow-content {
+	display: inline;
+}
+
+.ant-drawer-body {
+	height: 100%;
+}
+
+.ant-popover-arrow-content {
+	@apply dark:bg-slate-900;
+}
+
+.ant-message-custom-content {
+  @apply flex;
+}
+
+.ant-popconfirm-buttons {
+
+}
+
+.ant-modal-mask {
+  background-color: rgb(0 0 0 / 65%);
+  @apply backdrop-blur-sm backdrop-filter;
+}
+
+.ant-dropdown,
+.ant-tabs-dropdown-menu {
+	@apply shadow-lg bg-white dark:(bg-slate-800 border-slate-700 border) #{!important};
+	border-radius: var(--radius);
+}
+.ant-dropdown-content,
+.ant-tabs-dropdown-content {
+	border-radius: var(--radius);
+}
+.ant-tabs-dropdown-menu {
+	@apply p-2;
+}
+.ant-tabs-dropdown-menu-item-remove {
+	@apply text-white/80 text-10px inline-flex ml-auto #{!important};
+}
+.ant-tabs-dropdown-menu-title-content {
+	@apply flex flex-row items-center;
+}
+.ant-tabs-dropdown-menu-item {
+	@apply transition-none rounded-md;
+}
+
+.ant-drawer-content {
+	@apply dark:bg-slate-800;
+}
+
+html.dark {
+	.ant-tabs-dropdown-menu-item {
+		@apply text-white/80 hover:bg-slate-600  #{!important};
+	}
+	.ant-tabs-dropdown-menu-item-remove {
+		@apply text-white/80;
+	}
+
+	.ant-radio-input:focus + .ant-radio-inner {
+		box-shadow: 0 0 0 3px #8d5ed7;
+	}
+	.ant-popover-inner {
+		box-shadow: 0 2px 8px rgb(0 0 0 / 47%);
+	}
+	.ant-tooltip-inner {
+		@apply border border-cool-gray-700 bg-slate-900;
+
+		span {
+			@apply text-black;
+		}
+	}
+
+	.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+		background-color: white;
+	}
+
+	.ant-message-notice-content {
+		@apply bg-slate-800 text-white;
+		@apply border border-0.1px border-cool-gray-700;
+	}
+
+	.ant-divider {
+		@apply bg-white bg-opacity-20;
+	}
+}

@@ -1,0 +1,12 @@
+.bg-primary-dark {
+	@apply bg-primary-900 bg-opacity-30;
+	&.is-hoverable {
+		@apply hover:bg-opacity-50;
+	}
+}
+.bg-surface {
+	@apply bg-slate-50 dark:bg-slate-800;
+}
+.dark-bordered {
+	@apply dark:(border-cool-gray-700 border-opacity-50);
+}

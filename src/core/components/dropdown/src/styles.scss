@@ -1,0 +1,17 @@
+.dropdown-slot-container {
+  * {
+    width: 100%;
+  }
+}
+
+.app-dropdown {
+  @apply border-opacity-10;
+  background-color: rgb(var(--surface), var(--tw-bg-opacity)) !important;
+}
+
+body.dark {
+  .app-dropdown {
+    box-shadow: 0 2px 3px rgb(255 255 255 / 9%);
+    color: white !important;
+  }
+}

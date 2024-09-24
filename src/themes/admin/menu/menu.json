@@ -1,0 +1,174 @@
+[
+  {
+    "caption": "Nomencladores",
+    "modules": "['masters']",
+    "icon": "i-mdi:format-size w-1em h-1em",
+    "childrens": [
+      {
+        "name": "attributes_list",
+        "module": "masters",
+        "caption": "Atributos",
+        "icon": "",
+        "path": "/masters/attributes_list"
+      },
+      {
+        "name": "categories_list",
+        "module": "masters",
+        "caption": "Categorías",
+        "icon": "",
+        "path": "/masters/categories_list"
+      },
+      {
+        "name": "request_statuses_list",
+        "module": "masters",
+        "caption": "Estados de solicitud",
+        "icon": "",
+        "path": "/masters/request_statuses_list"
+      },
+      {
+        "name": "product_type_list",
+        "module": "masters",
+        "caption": "Tipos de producto",
+        "icon": "",
+        "hidden": false,
+        "path": "/masters/product_type_list"
+      }
+    ]
+  },
+  {
+    "caption": "Administración",
+    "modules": "['manage']",
+    "icon": "i-mdi:view-dashboard w-1em h-1em",
+    "childrens": [
+      {
+        "name": "products_list",
+        "module": "manage",
+        "caption": "Productos",
+        "icon": "",
+        "path": "/manage/products_list"
+      },
+      {
+        "name": "refurbished_list",
+        "module": "manage",
+        "caption": "Devoluciones",
+        "icon": "",
+        "path": "/manage/refurbished_list"
+      },
+      {
+        "name": "invoices_list",
+        "module": "manage",
+        "caption": "Facturas",
+        "icon": "",
+        "path": "/manage/invoices_list"
+      },
+      {
+        "name": "orders_list",
+        "module": "manage",
+        "caption": "Pedidos",
+        "icon": "",
+        "path": "/manage/orders_list"
+      },
+      {
+        "name": "product_category_list",
+        "module": "manage",
+        "caption": "Product category",
+        "icon": "",
+        "path": "/manage/product_category_list",
+        "hidden": true
+      },
+      {
+        "name": "product_order_list",
+        "module": "manage",
+        "caption": "Product order",
+        "icon": "",
+        "path": "/manage/product_order_list",
+        "hidden": true
+      },
+      {
+        "name": "products_attribute_list",
+        "module": "manage",
+        "caption": "Products attribute",
+        "icon": "",
+        "path": "/manage/products_attribute_list",
+        "hidden": true
+      },
+      {
+        "name": "business_sectors_list",
+        "module": "manage",
+        "caption": "Sectores de negocios",
+        "icon": "",
+        "path": "/manage/business_sectors_list"
+      }
+    ]
+  },
+  {
+    "caption": "Ventas",
+    "modules": "['sale']",
+    "icon": "i-mdi:cart-sale w-1em h-1em",
+    "childrens": [
+      {
+        "name": "pay_ways_list",
+        "module": "sale",
+        "caption": "Formas de pago",
+        "icon": "",
+        "path": "/sale/pay_ways_list"
+      },
+      {
+        "name": "coupons_list",
+        "module": "sale",
+        "caption": "Cupones",
+        "icon": "",
+        "path": "/sale/coupons_list"
+      }
+    ]
+  },
+  {
+    "caption": "Configuración",
+    "modules": "['settings']",
+    "icon": "i-mdi:settings w-1em h-1em",
+    "childrens": [
+      {
+        "name": "settings_list",
+        "module": "settings",
+        "caption": "Configuración",
+        "icon": "",
+        "path": "/settings/settings_list"
+      },
+      {
+        "name": "message_blocks_list",
+        "module": "settings",
+        "caption": "Bloques de Mensajes",
+        "icon": "",
+        "path": "/settings/message_blocks_list"
+      }
+    ]
+  },
+  {
+    "caption": "Seguridad",
+    "modules": "['security']",
+    "icon": "i-mdi:server-shield w-1em h-1em text-gray-300",
+    "childrens": [
+      {
+        "name": "permissions_list",
+        "module": "security",
+        "caption": "Permisos",
+        "icon": "i-mdi:circle-small w-1em h-1em",
+        "path": "/security/permissions_list"
+      },
+      {
+        "name": "roles_list",
+        "module": "security",
+        "caption": "Roles",
+        "icon": "i-mdi:circle-small w-1em h-1em",
+        "path": "/security/roles_list"
+      },
+      {
+        "name": "users_list",
+        "module": "security",
+        "caption": "Usuarios",
+        "icon": "i-heroicons:user-16-solid w-1em h-1em",
+        "path": "/security/users_list"
+      }
+    ]
+  }
+]

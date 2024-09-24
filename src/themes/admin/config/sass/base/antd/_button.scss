@@ -1,0 +1,22 @@
+.ant-btn-primary {
+  @apply border-primary-600  bg-primary-700 #{important}
+  border-inline-end-width: 1px;
+  @apply shadow-sm
+  outline: 0
+}
+
+.ant-btn-primary:not(:disabled):hover {
+  @apply hover:bg-primary-500 #{important}
+}
+
+.ant-btn:not(:disabled):focus-visible {
+  @apply outline-secondary-900 border-[2px]
+}
+
+.ant-switch.ant-switch-checked {
+  @apply bg-primary-700 #{!important};
+}
+
+:where(.css-dev-only-do-not-override-1hsjdkk).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  @apply bg-primary-700 #{!important};
+}

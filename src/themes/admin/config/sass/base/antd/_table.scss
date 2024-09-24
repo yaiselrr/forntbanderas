@@ -1,0 +1,279 @@
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  @apply bg-primary-50;
+}
+
+.ant-table {
+  border-radius: 10px !important;
+}
+
+.ant-table-thead > tr > th {
+  @apply font-bold;
+}
+
+.ant-table-body {
+  @apply min-h-[550px] max-h-[550px]#{important}
+}
+
+.ant-table-expanded-row-fixed {
+  @apply min-h-[470px] #{important}
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner:after {
+  @apply bg-primary-600
+}
+
+.ant-table-container {
+  @apply h-[1024px]
+  @apply rounded-[8px]
+  @apply max-h-[500px] overflow-auto
+  //height: 1024px;
+}
+
+.ant-table-filter-trigger {
+  @apply mr-1 #{!important};
+}
+
+.ant-table-striped .table-striped td {
+  background-color: #fafafa;
+}
+
+.ant-table-thead > tr > th {
+  padding: 8px 8px !important;
+}
+
+.ant-table-wrapper {
+  .ant-table-thead th.ant-table-column-has-sorters:focus-visible {
+	  @apply text-primary-700
+  }
+	.ant-table-column-sorter-up.active,.ant-table-column-sorter-down.active {
+		@apply text-primary-500
+	}
+}
+
+
+html.dark {
+  .ant-table-tbody > tr.ant-table-row:hover > td,
+  .ant-table-tbody > tr > td.ant-table-cell-row-hover,
+  .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+  .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+  .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+  .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    @apply bg-slate-900 #{!important};
+  }
+
+  .ant-table-cell-scrollbar {
+    box-shadow: 0 1px 0 1px #334155;
+  }
+
+  .ant-table.ant-table-bordered > .ant-table-container {
+    @apply border-slate-700;
+  }
+
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table {
+    @apply border-slate-700;
+  }
+
+  .ant-table {
+    @apply bg-slate-800 hover:bg-slate-700;
+
+    .ant-empty-img-simple-path {
+      @apply fill-slate-800;
+    }
+
+    .ant-empty-description {
+      @apply text-slate-400;
+    }
+
+    .ant-table-expanded-row-fixed {
+      @apply hover:(bg-slate-900) bg-slate-800;
+    }
+  }
+
+  .ant-pagination-total-text,
+  .ant-pagination-item > *,
+  .ant-pagination-options-quick-jumper {
+    @apply text-slate-400;
+    input {
+      @apply bg-slate-600 border-slate-700 text-slate-400;
+    }
+  }
+
+  .ant-pagination-item,
+  .ant-select-selector.ant-select-selector {
+    @apply bg-slate-600;
+  }
+
+  .ant-select-selector.ant-select-selector {
+    @apply border-slate-700 text-slate-400;
+  }
+
+  .ant-pagination-next,
+  .ant-pagination-prev {
+    svg {
+      @apply fill-slate-400;
+    }
+  }
+
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-content
+  > table
+  > tbody
+  > tr
+  > td
+  > .ant-table-expanded-row-fixed::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-header
+  > table
+  > tbody
+  > tr
+  > td
+  > .ant-table-expanded-row-fixed::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-body
+  > table
+  > tbody
+  > tr
+  > td
+  > .ant-table-expanded-row-fixed::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-summary
+  > table
+  > tbody
+  > tr
+  > td
+  > .ant-table-expanded-row-fixed::after {
+    @apply border-slate-700;
+  }
+
+  .ant-table-cell {
+    @apply bg-purple-800 text-slate-400#{!important};
+  }
+
+  .ant-table-column-sorters {
+    @apply bg-purple-800 text-slate-400;
+  }
+
+  .ant-table-thead > tr > th {
+    @apply border-slate-700;
+  }
+
+  .ant-table.ant-table-bordered {
+    .ant-table-cell {
+      @apply border-slate-700;
+    }
+  }
+
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > thead > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > thead > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > thead > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-summary > table > thead > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tbody > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > tbody > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tbody > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-summary > table > tbody > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tfoot > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > tfoot > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tfoot > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-summary > table > tfoot > tr > th,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tfoot > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > tfoot > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tfoot > tr > td,
+  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-summary > table > tfoot > tr > td {
+    @apply border-slate-700;
+  }
+
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-content
+  > table
+  > thead
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-header
+  > table
+  > thead
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-body
+  > table
+  > thead
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-summary
+  > table
+  > thead
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-content
+  > table
+  > tbody
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-header
+  > table
+  > tbody
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-body
+  > table
+  > tbody
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-summary
+  > table
+  > tbody
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-content
+  > table
+  > tfoot
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-header
+  > table
+  > tfoot
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-body
+  > table
+  > tfoot
+  > tr
+  > .ant-table-cell-fix-right-first::after,
+  .ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-summary
+  > table
+  > tfoot
+  > tr
+  > .ant-table-cell-fix-right-first::after {
+    @apply border-slate-700;
+  }
+}

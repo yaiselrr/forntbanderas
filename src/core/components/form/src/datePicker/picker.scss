@@ -1,0 +1,62 @@
+html.dark {
+  .ant-picker-cell {
+    @apply text-slate-700;
+  }
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  color: #fff;
+  @apply bg-primary-700 #{!important};
+}
+
+.ant-picker-dropdown .ant-picker-today-btn {
+  @apply text-primary-700 #{!important};
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  @apply border-primary-700 border-solid border-1 #{!important};
+}
+
+.ant-picker,
+.ant-picker-focused {
+  @apply;
+  border: none;
+  border-color: transparent;
+  border-right-width: 0px !important;
+  box-shadow: none;
+}
+
+.ant-picker {
+  background: transparent;
+  border-radius: none;
+
+  input {
+    @apply dark:text-white text-12px;
+  }
+}
+
+.ant-picker-panel {
+  @apply dark:(bg-slate-800 border border-slate-700 text-slate-300 shadow-xl) #{!important};
+}
+
+.ant-picker-header,
+.ant-picker-footer {
+  @apply dark:border-slate-700;
+}
+
+.ant-picker-panel button,
+.ant-picker-content th,
+.ant-picker-content tr,
+.ant-picker-cell-in-view {
+  @apply dark:(text-slate-300) #{!important};
+}
+
+.ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner,
+.ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end)
+.ant-picker-cell-inner {
+  @apply dark:bg-slate-700;
+}
+
+.ant-picker-today-btn {
+  @apply dark:text-primary-500;
+}

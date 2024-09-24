@@ -1,0 +1,144 @@
+.bg-main {
+	background: var(--backColor);
+}
+.bg-surface {
+	background-color: rgba(var(--surface), var(--tw-bg-opacity));
+}
+
+.\!bg-surface {
+	background-color: rgba(var(--surface), var(--tw-bg-opacity)) !important;
+}
+.hoverable-close {
+	transition: transform 0.5s cubic-bezier(0.36, 0.66, 0.04, 1);
+	cursor: pointer;
+	&:hover {
+		transform: rotate(-90deg);
+	}
+}
+
+.scrollbar {
+	scrollbar-width: thin;
+}
+
+.u-cover {
+	object-fit: cover;
+}
+
+.u-ellipsis {
+	white-space: pre;
+	text-overflow: ellipsis;
+}
+
+//.flexC {
+//	display: flex;
+//	flex-direction: column;
+//}
+//.flex-center {
+//	@apply flex items-center justify-center;
+//}
+
+.flexR {
+	display: flex;
+	flex-direction: row;
+}
+
+.absolute-center {
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+}
+
+.backface-hidden {
+	backface-visibility: hidden !important;
+}
+
+.u-text-ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.h-fit-content {
+	height: fit-content;
+}
+
+.w-fit-content {
+	width: fit-content !important;
+}
+.color-inherit {
+	color: inherit !important;
+}
+.text-muted {
+	@apply text-slate-500 dark:text-slate-400;
+}
+
+.app-skeleton {
+	position: relative;
+	background-color: #dee2e6;
+	@apply dark:bg-slate-700/70;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.app-skeleton:after {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+	content: "";
+	animation: app-skeleton-animation 1.2s infinite;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(-100%);
+	z-index: 1;
+}
+html.dark .app-skeleton:after {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(155, 155, 155, 0.4), rgba(255, 255, 255, 0));
+}
+
+.app-skeleton-none:after {
+	animation: none;
+}
+
+@keyframes app-skeleton-animation {
+	0% {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, 8px);
+	}
+	100% {
+		transform: translate(0, -0px);
+	}
+}
+.floating-4 {
+	animation-name: floating;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes floating-4 {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, 8px);
+	}
+	100% {
+		transform: translate(0, -0px);
+	}
+}

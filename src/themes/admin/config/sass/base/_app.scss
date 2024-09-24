@@ -1,0 +1,33 @@
+.card {
+	@apply relative overflow-hidden border border-0.1px border-transparent shadow p-4 transition-all duration-200 dark:( border-cool-gray-700 border-opacity-60);
+	@apply bg-slate-50 dark:bg-slate-800 dark:highlight-white/5;
+	border-radius: var(--big-radius);
+}
+
+.press {
+	@apply active:(scale-95)  hover:(cursor-pointer) transform #{!important};
+	// @apply hover:(cursor-pointer) transform motion-reduce:transform-none #{!important};
+}
+
+.round {
+	border-radius: var(--radius);
+}
+.round-big {
+	border-radius: var(--big-radius);
+}
+
+.border-app {
+	@apply border border-transparent dark: (border-true-gray-700 border-opacity-50);
+}
+
+.app-modal {
+	.ant-modal-body {
+		@apply p-0;
+	}
+	.ant-modal-confirm-btns {
+		display: none;
+	}
+	.ant-modal-confirm-content {
+		margin: 0 !important;
+	}
+}

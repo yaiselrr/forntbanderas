@@ -1,0 +1,15 @@
+.ant-modal-content {
+  @apply overflow-hidden;
+  background-color: transparent !important;
+  border-radius: var(--big-radius) !important
+}
+
+.ant-modal-body {
+  padding: 0px !important
+}
+
+body.dark {
+  .ant-modal-wrap {
+    @apply bg-black bg-opacity-40;
+  }
+}

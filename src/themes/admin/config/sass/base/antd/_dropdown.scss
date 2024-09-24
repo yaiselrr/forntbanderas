@@ -1,0 +1,9 @@
+.ant-btn-default:not(:disabled):hover {
+  @apply text-primary-800 border-primary-800
+}
+.ant-btn-default {
+  @apply text-primary-600 border-primary-600
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item:hover{
+  @apply bg-primary-100
+}

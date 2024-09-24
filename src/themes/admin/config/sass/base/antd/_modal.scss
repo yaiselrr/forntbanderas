@@ -1,0 +1,17 @@
+.modal-form {
+  .ant-modal-content {
+    @apply p-0 #{important}
+  }
+
+  .ant-modal-header {
+    @apply r-header-modal p-5  border-b-solid border-1 border-gray-300 #{important}
+  }
+
+  .ant-modal-body {
+
+  }
+
+  .ant-modal-title {
+    @apply text-black text-2xl
+  }
+}
